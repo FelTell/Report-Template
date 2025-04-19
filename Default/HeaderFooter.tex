@@ -1,0 +1,29 @@
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{33.5pt}
+\lhead{\large
+    \ifdefined\title
+        \title
+    \fi
+
+    \ifdefined\name
+        \name
+    \fi
+    \ifdefined\headerNames
+        \headerNames
+    \fi
+}
+
+\rhead{\large
+    \ifdefined\course
+        \course
+    \fi
+
+    \ifdefined\id
+        \id
+    \fi
+}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\rfoot{\textbf{\GetTranslation{Page}: \thepage}}
+\lfoot{}

@@ -1,0 +1,37 @@
+\usepackage{Default/Packages}
+
+\graphicspath{{Default/Figures/}}
+\geometry{a4paper, portrait, includeheadfoot=true, hmargin=2cm, vmargin=2cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\bibliography{Sources}
+
+\input{Default/Language}
+
+\begin{document}
+
+\input{Settings}
+
+\ifdefined\showTitlePage
+    \input{Default/TitlePage}
+\fi
+
+\input{Default/HeaderFooter}
+
+
+\ifdefined\showTableOfContents
+    \tableofcontents
+\fi
+
+\pagebreak
+
+% Related to code display:
+\lstset{
+    language=Java,
+    basicstyle=\small\ttfamily,
+    columns=fullflexible,
+    breaklines=true,
+    breakatwhitespace=true,
+}

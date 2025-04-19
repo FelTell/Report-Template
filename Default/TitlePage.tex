@@ -1,0 +1,55 @@
+\begin{titlepage}
+    \begin{center}
+
+        {\fontsize{40}{48}\selectfont \bfseries
+            \ifdefined\title
+                \title \\
+            \fi
+        }
+
+        \vspace{20pt}
+
+        {\LARGE
+            \ifdefined\subtitle
+                \subtitle \\
+            \fi
+        }
+
+        \vspace{20pt}
+
+        \ifdefined\names
+            \textbf{\GetTranslation{Authors}:\\ \names} \\
+        \fi
+
+        \ifdefined\name
+            \textbf{\GetTranslation{Author}: \name} \\
+        \fi
+
+        \ifdefined\id
+            \textbf{\GetTranslation{ID}: \id} \\
+        \fi
+
+        \vfill
+
+        \ifdefined\university
+            \university \\
+        \fi
+
+        \ifdefined\course
+            \course \\
+        \fi
+
+        \ifdefined\semester
+            \semester \\
+        \fi
+
+        \vspace{8pt}
+
+        \today
+    \end{center}
+\end{titlepage}
+
+
+
+
+
