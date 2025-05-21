@@ -21,7 +21,7 @@
                 \course
             \fi
         \else
-            \GetTranslation{Page}: \thepage
+            \GetTranslation{Page} \thepage
         \fi
 
         \ifdefined\id
@@ -32,6 +32,6 @@
 
 \ifdefined\showFooter
     \renewcommand{\footrulewidth}{0.4pt}
-    \rfoot{\textbf{\GetTranslation{Page}: \thepage}}
+    \rfoot{\textbf{\GetTranslation{Page} \thepage}}
     \lfoot{}
 \fi
