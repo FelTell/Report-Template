@@ -1,29 +1,37 @@
-\pagestyle{fancy}
-\fancyhf{}
-\setlength{\headheight}{33.5pt}
-\lhead{\large
-    \ifdefined\title
-        \title
-    \fi
+\ifdefined\showHeader
+    \pagestyle{fancy}
+    \fancyhf{}
+    \setlength{\headheight}{33.5pt}
+    \lhead{\large
+        \ifdefined\title
+            \title
+        \fi
 
-    \ifdefined\name
-        \name
-    \fi
-    \ifdefined\headerNames
-        \headerNames
-    \fi
-}
+        \ifdefined\name
+            \name
+        \fi
+        \ifdefined\headerNames
+            \headerNames
+        \fi
+    }
 
-\rhead{\large
-    \ifdefined\course
-        \course
-    \fi
+    \rhead{\large
+        \ifdefined\showFooter
+            \ifdefined\course
+                \course
+            \fi
+        \else
+            \GetTranslation{Page}: \thepage
+        \fi
 
-    \ifdefined\id
-        \id
-    \fi
-}
+        \ifdefined\id
+            \id
+        \fi
+    }
+\fi
 
-\renewcommand{\footrulewidth}{0.4pt}
-\rfoot{\textbf{\GetTranslation{Page}: \thepage}}
-\lfoot{}
+\ifdefined\showFooter
+    \renewcommand{\footrulewidth}{0.4pt}
+    \rfoot{\textbf{\GetTranslation{Page}: \thepage}}
+    \lfoot{}
+\fi
