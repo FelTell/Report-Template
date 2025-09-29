@@ -1,0 +1,29 @@
+\chapter{Introdução}
+
+A quantidade de telas presente em dispositivos que nos cercam tem crescido exponencialmente. Desde eletrodomésticos até veículos, a presença de interfaces gráficas do usuário (GUI, do inglês Graphical User Interface) tornou-se um padrão esperado. Com a popularização da Internet das Coisas (IoT) e a evolução dos dispositivos inteligentes, a demanda por interfaces mais sofisticadas e interativas aumentou significativamente.
+
+Nos Estados Unidos, cerca de 97\% dos veículos vendidos em 2023 saíram de fábrica com telas sensíveis ao toque~\cite{forbes-touchscreens}. Essas telas não apenas substituem botões físicos, mas também oferecem uma experiência de usuário mais rica e intuitiva, permitindo controle sobre diversas funcionalidades do veículo, desde o sistema de entretenimento até as configurações de segurança.
+
+Os usuários modernos esperam que seus dispositivos, sejam eles carros, eletrodomésticos ou equipamentos industriais, possuam interfaces gráficas fluidas e esteticamente agradáveis, similares às encontradas em smartphones e tablets. No entanto, essa expectativa colide com a realidade dos sistemas embarcados, que frequentemente operam com recursos de hardware limitados, como capacidade de processamento, memória de acesso aleatório (RAM) e armazenamento.
+
+Essas limitações impõem desafios significativos no desenvolvimento de interfaces gráficas ricas e interativas. Os desenvolvedores precisam encontrar maneiras de otimizar o desempenho e a eficiência dos sistemas, garantindo que as interfaces atendam às expectativas dos usuários sem comprometer a funcionalidade ou a estabilidade do dispositivo. Isso, porém, leva tempo e demanda conhecimento técnico especializado.
+
+Para superar esses desafios, as bibliotecas de GUI emergem como uma solução eficaz. Essas bibliotecas abstraem a complexidade da renderização gráfica e do gerenciamento de recursos, oferecendo aos desenvolvedores um conjunto de ferramentas prontas para criar interfaces de usuário sofisticadas de maneira mais eficiente. Com widgets pré-construídos, suporte a animações e layouts responsivos, as bibliotecas de GUI permitem que os desenvolvedores se concentrem na criação de experiências de usuário envolventes, sem a necessidade de tratar problemas de baixo nível.
+
+O objetivo deste trabalho é avaliar diferentes bibliotecas de GUI disponíveis no mercado, analisando suas características, desempenho e facilidade de uso em sistemas embarcados. Por meio dessa avaliação, pretende-se identificar as melhores práticas e ferramentas para o desenvolvimento de interfaces gráficas em dispositivos com recursos limitados, como microcontroladores.
+
+\section{Frameworks}
+
+Abaixo estão listadas algumas das principais bibliotecas de GUI existentes no mercado e que serão analisadas neste trabalho, descrevendo suas características, linguagens de programação utilizadas, modelos de licenciamento e ferramentas visuais associadas.
+
+\subsection{LVGL}
+LVGL é uma biblioteca gráfica gratuita e de código aberto, anteriormente conhecida como LittlevGL, desenvolvida em C. A licença MIT (Massachusetts Institute of Technology) permite o uso comercial e não comercial de forma gratuita, desde que a devida atribuição seja dada ao autor original. Existem ferramentas como o SquareLine Studio e o LVGL UI Editor que permitem a criação de interfaces gráficas de forma visual, sem a necessidade de escrever código manualmente; porém, essas ferramentas não são gratuitas para uso comercial.
+
+\subsection{TouchGFX}
+TouchGFX é uma biblioteca gráfica desenvolvida pela STMicroelectronics, projetada para criar interfaces de usuário para produtos com microcontroladores da própria STMicroelectronics. O código da biblioteca é fechado e proprietário, o que significa que os desenvolvedores não têm acesso ao código-fonte completo. A interface é desenvolvida em C++. A biblioteca é gratuita para uso comercial, desde que o projeto utilize microcontroladores da STMicroelectronics. A ferramenta oferece uma interface visual para criar e personalizar interfaces gráficas de forma gratuita.
+
+\subsection{Qt for MCUs}
+Qt é um framework amplamente utilizado para o desenvolvimento de aplicações com interfaces gráficas multiplataforma, incluindo desktops, dispositivos móveis e sistemas embarcados. Qt for MCUs (MCU, do inglês Microcontroller Unit) é uma versão do framework Qt projetada especificamente para microcontroladores. A ferramenta tem código aberto e é desenvolvida em C++. A licença do Qt permite uso gratuito apenas para projetos de código aberto; para uso comercial, é necessário adquirir uma licença paga. Existem ferramentas como o Qt Design Studio que permitem a criação de interfaces gráficas de forma visual; porém, essas ferramentas também não são gratuitas para uso comercial.
+
+\subsection{Embedded Wizard}
+Embedded Wizard é uma biblioteca gráfica proprietária desenvolvida pela empresa alemã TARA Systems GmbH. O desenvolvimento é feito em C. O código-fonte da ferramenta é fechado e está disponível apenas para clientes que adquirirem uma licença profissional paga. Existe uma opção de licença gratuita, mas com limitações de uso, servindo apenas para fins de avaliação, incluindo uma marca d'água nas interfaces criadas e sem acesso ao código-fonte, apenas à biblioteca pré-compilada. A ferramenta Embedded Wizard Studio oferece uma interface visual para criar e personalizar interfaces gráficas.

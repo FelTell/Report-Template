@@ -12,4 +12,7 @@
 *.toc
 *.pdf
 *.synctex(busy)
+*.idx
+*.ilg
+*.ind
 

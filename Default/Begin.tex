@@ -1,37 +1,68 @@
 \usepackage{Default/Packages}
 
 \graphicspath{{Figures/}}
-\geometry{a4paper, portrait, includeheadfoot=true, hmargin=2cm, vmargin=2cm}
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 
+		Nenhuma citação no texto.
+	\or
+		Citado na página #2.
+	\else
+		Citado #1 vezes nas páginas #2.
+	\fi}
 
-\bibliography{Sources}
 
-\input{Default/Language}
+
+\titulo{Avaliação de diferentes bibliotecas de interface gráficas para software embarcado}
+\autor{Felipe Vaz de Melo Telles}
+\local{Belo Horizonte}
+\data{2025}
+\orientador{Prof. Tomás Perpetuo Corrêa}
+\instituicao{%
+  Universidade Federal de Minas Gerais -- UFMG
+  \par
+  Escola de Engenharia
+  \par
+  Curso de Graduação em Engenharia Elétrica}
+\tipotrabalho{Trabalho de Conclusão de Curso}
+
+
+\preambulo{Monografia apresentada durante o Seminário dos Trabalhos de Conclusão do Curso de Graduação em Engenharia Elétrica da UFMG, como parte dos requisitos necessários à obtenção do título de Engenheiro Eletricista.}
+
+\definecolor{blue}{RGB}{41,5,195}
+
+
+\makeatletter
+\hypersetup{
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       
+    	linkcolor=blue,        
+    	citecolor=blue,        
+    	filecolor=magenta,     
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+
+\setlength{\parindent}{1.3cm}
+
+\setlength{\parskip}{0.2cm}  
+
+\makeindex
 
 \begin{document}
 
-\input{Settings}
+\frenchspacing
 
-\ifdefined\showTitlePage
-    \input{Default/TitlePage}
-\fi
+\imprimircapa
 
-\input{Default/HeaderFooter}
+\imprimirfolhaderosto
 
+\textual
 
-\ifdefined\showTableOfContents
-    \tableofcontents
-\fi
-
-\pagebreak
-
-% Related to code display:
-\lstset{
-    language=Java,
-    basicstyle=\small\ttfamily,
-    columns=fullflexible,
-    breaklines=true,
-    breakatwhitespace=true,
-}
