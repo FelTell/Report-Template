@@ -1,0 +1,30 @@
+\chapter{Revisão da literatura}
+
+A discussão sobre interfaces gráficas em sistemas embarcados tem ganhado destaque na literatura recente, refletindo a crescente demanda por dispositivos mais intuitivos e interativos. Diversos estudos têm explorado vários aspectos dessa temática, desde a importância das interfaces gráficas para a usabilidade dos sistemas embarcados até a criação de frameworks específicos para o desenvolvimento dessas interfaces. No entanto, ainda há lacunas na literatura, especialmente no que diz respeito à comparação prática entre diferentes frameworks disponíveis no mercado.
+
+\section{Sistemas embarcados com telas}
+
+Em \cite{GraziosiSistemasEmbarcados}, são examinados os desenvolvimentos mais atuais na concepção de interfaces Homem-Máquina (HMI) em sistemas veiculares embarcados. O estudo foca em inovações como telas sensíveis ao toque, comandos de voz avançados e controles por gestos, destacando como esses recursos melhoram a usabilidade e a segurança das interfaces de operação. Os resultados indicam que a incorporação de tecnologias HMI transformou a experiência de condução na indústria automobilística, com ganhos em segurança, conveniência e conectividade. Os sistemas HMI veiculares oferecem interação dinâmica e personalizada por meio de telas sensíveis ao toque, comandos de voz e controle por gestos. Esses avanços aprimoram o controle das funções do veículo e a consciência situacional do motorista, aumentando a segurança com sistemas de assistência ao condutor.
+
+Em sistemas médicos embarcados, \cite{Arandia2022Embedded} destacam que os dispositivos médicos embarcados são fundamentais para o avanço da atenção à saúde. Esses equipamentos são versáteis, customizáveis e de baixo custo, e seu crescimento vem permitindo o monitoramento contínuo de sinais vitais e viabilizando soluções vestíveis ou descartáveis. Por serem sistemas complexos que podem ser utilizados tanto por profissionais de saúde quanto por pacientes, a interface gráfica desempenha papel crucial na usabilidade e na eficácia desses dispositivos.
+
+\section{Frameworks}
+
+O trabalho de \cite{Marciano} aborda a implementação de uma biblioteca gráfica para microcontroladores com telas TFT–LCD, destacando os desafios e as soluções encontradas durante o desenvolvimento. O autor implementa uma biblioteca própria e a compara com outras soluções, como LVGL e Embedded Wizard. Ao comparar as bibliotecas, o autor destaca que a solução própria apresenta a menor ocupação de memória flash, enquanto o Embedded Wizard é o mais eficiente em termos de uso de processador.
+
+Uma limitação do estudo é não considerar a facilidade de uso e a documentação das bibliotecas, aspectos relevantes para desenvolvedores. Outra limitação decorre do fato de se tratar de um trabalho de 2019, que não contempla diversas atualizações e melhorias realizadas nas bibliotecas desde então. Como o autor focaliza a criação de uma solução própria, o estudo não explora um conjunto amplo de bibliotecas existentes no mercado, restringindo a comparação a apenas duas delas.
+
+Outro trabalho comparativo foi realizado por \cite{ISNAS2021Comparison}, que apresenta um estudo entre as bibliotecas de interface gráfica (GUI) para hardware embarcado TouchGFX e LVGL. O objetivo principal foi analisar e interpretar as duas bibliotecas com base em um conjunto de critérios técnicos e comerciais, incluindo requisitos mínimos de sistema, modelo de licenciamento e popularidade.
+
+Os resultados indicam que, embora ambas as bibliotecas sejam gratuitas e adequadas para sistemas com baixos requisitos computacionais, elas apresentam vantagens distintas. O TouchGFX se destaca por incluir gratuitamente uma ferramenta de design visual capaz de gerar código automaticamente. Em contrapartida, o LVGL tem como principal vantagem ser uma biblioteca de código aberto mantida pela comunidade e que pode ser utilizada em aplicações comerciais sem custos adicionais para qualquer família de microcontroladores.
+
+Os autores não realizaram testes práticos com as ferramentas; analisaram-se apenas os recursos divulgados pelas bibliotecas, como requisitos mínimos de sistema e funcionalidades compatíveis. Os autores também compararam a popularidade das bibliotecas usando métricas de busca. Embora o TouchGFX tenha apresentado um volume de buscas historicamente maior nos cinco anos analisados, observou-se que as buscas por LVGL cresceram e se aproximaram das do TouchGFX em períodos mais recentes (próximos a 2021).
+
+Na conclusão, \cite{ISNAS2021Comparison} ressalta a necessidade de estudos práticos que avaliem o desempenho real das bibliotecas em cenários de aplicação.
+
+O artigo de \cite{ChoosingAGUILibrary} é antigo, mas mostra o estado das bibliotecas gráficas para sistemas embarcados em 2007. Foram comparadas uma versão do Qt e o Nano-X. Enquanto o Qt continua relevante, o Nano-X permanece voltado a sistemas legados e apresenta suporte limitado a novas tecnologias. O artigo destaca que a escolha da biblioteca gráfica depende de vários fatores, tais como o esforço exigido para a instalação e configuração iniciais, o tempo total de desenvolvimento das funcionalidades principais, a facilidade resultante do modelo de programação e a qualidade da documentação disponível. Esses fatores seguem relevantes para a escolha de bibliotecas gráficas em sistemas embarcados atualmente.
+
+\section{Análise da literatura}
+
+A revisão da literatura revela que o uso de interfaces gráficas em sistemas embarcados é um tema relevante e crescente em diversas áreas, como a médica e a veicular. Embora existam estudos que abordem a implementação de interfaces gráficas em sistemas embarcados, há carência de análises comparativas abrangentes entre os diversos frameworks disponíveis. Trabalhos como os de \cite{Marciano} e \cite{ISNAS2021Comparison} fornecem informações sobre desempenho e características técnicas de algumas bibliotecas, mas cobrem um conjunto limitado de opções. Além disso, a análise de desempenho prático em cenários reais é escassa e não contempla aspectos como facilidade de uso e qualidade da documentação.
+
